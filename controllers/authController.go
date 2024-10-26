@@ -24,9 +24,9 @@ func CheckPasswordHash(password, hash string) bool {
 
 func Register(c *gin.Context) {
 	var input struct {
-		Name	string `json:"name", binding:="required"`
-		Email	string `json:"email", binding:="required"`
-		Password string `json:"password", binding:="required"`
+		Name	string `json:"name" binding:="required"`
+		Email	string `json:"email" binding:="required"`
+		Password string `json:"password" binding:="required"`
 	}
 
 	if err := c.ShouldBindJSON(&input); err != nil {
@@ -48,8 +48,8 @@ func Register(c *gin.Context) {
 
 func Login(c *gin.Context) {
 	var input struct {
-		Email	string `json:"email", binding:="required"`
-		Password	string `json:"password", binding:="required"`
+		Email	string `json:"email" binding:="required"`
+		Password	string `json:"password" binding:="required"`
 	}
 
 	if err := c.ShouldBindJSON(&input); err != nil {
