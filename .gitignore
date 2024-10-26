@@ -1,0 +1,34 @@
+# Binary output
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go build cache
+*.out
+*.a
+*.test
+
+# Vendor directory (if using vendoring)
+vendor/
+
+# IDE and Editor specific files
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Prisma files
+prisma/migrations/
+prisma/dev.db
+prisma/dev.db-journal
